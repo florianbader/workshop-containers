@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍕 Pizza Paradise</h1>
+            <p>Choose your favorite pizzas and place your order!</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Pizza Menu Section -->
+            <section class="pizza-menu">
+                <h2>Our Pizzas</h2>
+                <div id="pizzaList" class="pizza-grid">
+                    <!-- Pizzas will be loaded here dynamically -->
+                    <div class="loading">Loading pizzas...</div>
+                </div>
+            </section>
+
+            <!-- Basket Section -->
+            <aside class="basket">
+                <h2>Your Basket</h2>
+                <div id="basketItems" class="basket-items">
+                    <p class="empty-basket">Your basket is empty</p>
+                </div>
+                <div class="basket-footer">
+                    <button id="confirmOrderBtn" class="btn-confirm" disabled>
+                        Confirm Order
+                    </button>
+                    <div id="orderSuccess" class="order-success hidden">
+                        ✓ Order confirmed successfully!
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
